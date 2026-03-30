@@ -205,6 +205,120 @@ const nodes = [
         star: '★★★ El mayor twist narrativo de la saga. La novelización lo maneja con sutileza: la compasión de Atreus en el Cap. 1 no es una debilidad que debe corregirse — es el germen del caos ordenado que Loki representa en la mitología. La pregunta de si Kratos puede cambiar se invierte: ¿puede Atreus no convertirse en lo que la mitología dijo que sería?'
     },
 
+    // ── CATEGORÍA LORE ─────────────────────────────────
+    {
+        id: 'cat-lore', label: 'Lore Nórdico', group: 'CAT', type: 'Categoría',
+        desc: 'Fundamentos mitológicos y cosmológicos del mundo nórdico tal como los presenta God of War. Este bloque contiene el conocimiento previo necesario para comprender la historia: razas, facciones divinas, cosmología, criaturas y profecías.',
+        star: ''
+    },
+
+    // ── COSMOLOGÍA ─────────────────────────────────────
+    {
+        id: 'yggdrasil', label: 'Yggdrasil', group: 'MITOLOGIA', type: 'Lore — Cosmología',
+        desc: 'El Árbol del Mundo: un inmenso árbol que crece desde el Lago de los Nueve y cuyas ramas conectan y sostienen los nueve reinos del cosmos nórdico. Trasciende el tiempo y el espacio — no existe un origen que pueda atribuírsele. Tres raíces principales anclan el árbol en planos distintos: una sobre el pozo de Urðr (las Nornas), una sobre Jötunheim y una sobre Niflheim. A través de los portales mágicos (Mystic Gateways) es posible viajar entre reinos caminando por las ramas del árbol, aunque desviarse del camino significa la muerte instantánea. El árbol parece poseer una forma de conciencia no verbal. En God of War la base del árbol emerge del centro del Lago de los Nueve, en Midgard, donde se encuentra el templo de Týr, el punto de acceso al viaje entre reinos.',
+        star: '★★★ Yggdrasil no es solo escenografía: es el sistema de transporte, el árbitro cosmológico y el símbolo de la interconexión de todos los reinos. En la mitología histórica el nombre probablemente significa «el caballo de Odín» — una referencia al sacrificio de Odín colgándose del árbol para obtener las runas. En el juego es la arquitectura visible de un universo que está a punto de ser sacudido.'
+    },
+    {
+        id: 'lago-nueve', label: 'Lago de los Nueve', group: 'LUGAR', type: 'Lugar — Centro de Midgard',
+        desc: 'Gran lago en el corazón de Midgard desde el que emerge Yggdrasil. Es el centro geográfico del mundo nórdico y el lugar donde convergen la mayoría de las rutas de viaje entre reinos. En el lago se alza el templo de Týr — la única estructura capaz de activar los portales de viaje intereino. La estatua sumergida de Thor es una presencia constante y amenazante en sus aguas. El lago es también el hogar de Jörmungandr, la Serpiente del Mundo, que lo rodea con su cuerpo y cuya escala hace que el lago parezca pequeño a su alrededor.',
+        star: '★★ El Lago de los Nueve es el corazón del mundo jugable en God of War (2018). Mientras Kratos y Atreus lo exploran descubren las capas del mundo que les rodea: el pasado del dios Týr, la presencia de Jörmungandr, y las huellas de una civilización de gigantes que ya no existe.'
+    },
+
+    // ── DIOSES ─────────────────────────────────────────
+    {
+        id: 'odin-allfather', label: 'Odín — El Padre de Todo', group: 'MITOLOGIA', type: 'Lore — Dios Æsir',
+        desc: 'El Padre de Todo (Allfather), rey y dios supremo del panteón Æsir. Dios de la sabiduría, la guerra, la muerte, la magia y la profecía. Porta la lanza Gungnir. Sacrificó su ojo derecho para beber del pozo de Mimir y obtener conocimiento infinito — y posteriormente aprisionó al sabio Mimir para usar su sabiduría de forma exclusiva. Tiene dos cuervos, Huginn y Muninn («pensamiento» y «memoria»), que vuelan por los nueve reinos recopilando información. Su paranoia respecto a Ragnarök — la profecía de su propia destrucción — define toda su política: el exterminio de los gigantes, el control de los demás reinos, la búsqueda obsesiva de toda profecía relacionada con su destino. En la mitología histórica Odín era complejo y moralmente ambiguo; en el universo GoW esta ambigüedad se oscurece hacia la tiranía. Gobierna desde Asgard con inteligencia y miedo — nunca ejerce fuerza bruta cuando puede ejercer manipulación.',
+        star: '★★★ Odín es el gran ausente del Cap. 1 pero la sombra bajo la que todo sucede. Cada troll que aparece, cada gigante muerto, cada reino cerrado: todo es consecuencia de sus decisiones. Comprenderlo es comprender el mundo en que Kratos y Atreus se mueven. En el juego su presencia se siente antes de que aparezca: su mano está en todo.'
+    },
+    {
+        id: 'thor-trueno', label: 'Thor — Dios del Trueno', group: 'MITOLOGIA', type: 'Lore — Dios Æsir',
+        desc: 'Hijo de Odín, dios del trueno, de la fuerza y de la tormenta. Porta el martillo Mjölnir, forjado por los enanos Brok y Sindri. En la mitología popular (y en Marvel) Thor es un héroe noble; en God of War esta imagen es una construcción deliberada de propaganda divina. El Thor del universo GoW fue durante décadas el ejecutor de la campaña genocida de Odín contra los gigantes — masacró a la mayoría de los Jötnar usando Mjölnir como arma de destrucción masiva. Los enanos que forjaron el martillo arrastran culpa por haber contribuido a esa devastación. Es hijo de Odín y de la giganta Fjörgyn (de ahí que sea también mestizo Jötunn). A diferencia de Odín, Thor resuelve los problemas con fuerza directa. En el estado del mundo al inicio de la historia, Thor ya ha completado su campaña exterminadora — los gigantes en Midgard están extintos.',
+        star: '★★★ La reputación de Thor precede su aparición en el juego por horas. Mimir, Brok, Sindri y otros hablan de él como una amenaza concreta, no abstracta. Su Mjölnir no es el símbolo de poder noble del mito popular — es el arma que diezmó una civilización entera. Conocer este contexto hace que cada mención de su nombre tenga peso.'
+    },
+    {
+        id: 'tyr-dios', label: 'Týr — Dios de la Justicia', group: 'MITOLOGIA', type: 'Lore — Dios Æsir',
+        desc: 'El dios Æsir de la justicia, la ley y la guerra honorable. A diferencia del resto de los Æsir, Týr fue el único dios que trató a los gigantes, elfos y enanos con respeto genuino — viajó a todos los reinos como diplomático y construyó relaciones basadas en confianza mutua. Su templo en el Lago de los Nueve es la prueba de esa labor: el único punto neutral en un mundo controlado por Odín. Desapareció en algún momento anterior a los eventos de la historia — Odín lo encarceló por su lealtad a los gigantes, aunque la mayoría cree que está muerto. Su nombre está escrito en runas en el templo que construyó, y sus viajes entre reinos dejaron rastros de su filosofía de paz en culturas que los Æsir nunca hubieran respetado.',
+        star: '★★★ Týr es el Æsir «de lo que pudo ser»: la prueba de que los dioses nórdicos no necesitaban ser tiranos. Su ausencia en el presente narrativo es tan significativa como la de Faye: el único dios digno del nombre no está. El templo que dejó atrás es la única herramienta neutral que permite a Kratos y Atreus moverse por los reinos.'
+    },
+
+    // ── RAZAS ──────────────────────────────────────────
+    {
+        id: 'jotnar', label: 'Los Jötnar (Gigantes)', group: 'MITOLOGIA', type: 'Lore — Raza',
+        desc: 'La raza de los gigantes nórdicos — seres primordiales anteriores a los dioses, cuya primera forma fue Ymir, el ser del que Odín creó Midgard. Los Jötnar no son simplemente criaturas grandes: son una raza inteligente y civilizada con arquitectura, arte, comercio y — lo más temido — el don de la precognición. Podían ver el futuro. Esta capacidad profética les otorgó el conocimiento de Ragnarök y de los eventos que vendrían — incluyendo la llegada de Kratos y Atreus — conocimiento que Odín quería monopolizar. Como resultado, Odín ordenó su exterminio sistemático, ejecutado principalmente por Thor. Al inicio de la historia los gigantes en Midgard están prácticamente extintos; los sobrevivientes se refugiaron en Jötunheim sellando sus puertas con magia. Faye — la madre de Atreus — era una Jötunn que eligió quedarse en Midgard.',
+        star: '★★★ Los Jötnar son el corazón ético de la historia. Su adaptación en GoW invierte la tradición mitológica donde eran villanos: aquí son los nobles víctimas de una campaña genocida. La extinción de los gigantes en Midgard es el estado del mundo en el que Kratos y Atreus operan — una ruina que todavía está tibia.'
+    },
+    {
+        id: 'enanos-svartalf', label: 'Los Enanos de Svartalfheim', group: 'MITOLOGIA', type: 'Lore — Raza',
+        desc: 'Raza de humanoides de baja estatura originarios de Svartalfheim (también llamado Niðavellir). Son los artesanos supremos de los nueve reinos: forjan las armas más poderosas de la historia — incluyendo Mjölnir (el martillo de Thor) y la propia Hacha de Leviatán. Poseen una magia natural que les permite desplazarse entre el espacio físico y el «reino entre reinos», lo que los vuelve prácticamente invisibles a la mayoría de los seres conscientes. Esta habilidad es lo que les permite sobrevivir en un mundo donde Odín podría haberlos esclavizado: simplemente desaparecen de la percepción. Culturalmente valoran la artesanía como acto sagrado — construir una arma excepcional es un acto de devoción, no un servicio comercial. La entrega de un arma a un portador digno es el mayor honor que un enano puede dar.',
+        star: '★★ Los enanos son la capa cómica y emocionalmente rica del mundo de GoW. Brok y Sindri, los dos más relevantes, cargaron durante años con la culpa de haber forjado Mjölnir — el arma que usó Thor para destruir a los gigantes. Su arrepentimiento los convirtió en aliados de quienes se oponen a los Æsir.'
+    },
+    {
+        id: 'valquirias', label: 'Las Valquirias', group: 'MITOLOGIA', type: 'Lore — Raza Divina',
+        desc: 'Las Valquirias son guerreras divinas al servicio de Odín cuya función es volar sobre los campos de batalla y escoger a los guerreros más dignos de entre los caídos, conduciéndolos a Valhalla para que se unan a los Einherjar. En la mitología histórica son figuras ambiguas — asistentes de Odín que a veces muestran compasión y a veces crueldad. En el universo de God of War, las Valquirias están vinculadas a la corrupción que Odín ha sembrado en los reinos: su estado actual al inicio de la historia es el resultado de esa corrupción. Son también las guardianas que debían recibir a los guerreros muertos y conducirlos a Valhalla — cuando esta función falla, los guerreros sin guía se convierten en Draugr.',
+        star: '★★ En GoW las Valquirias son la intersección entre la teología nórdica de la muerte y el estado roto del mundo. La función que deberían cumplir — guiar a los muertos — no se está cumpliendo, lo que tiene consecuencias directas en el mundo que Kratos y Atreus atraviesan.'
+    },
+    {
+        id: 'draugr', label: 'Los Draugr', group: 'MITOLOGIA', type: 'Lore — Criatura',
+        desc: 'Los Draugr («caminantes de regreso» en nórdico antiguo) son guerreros muertos que, cegados por la ira, rechazaron el llamado de las Valquirias a Valhalla — generalmente por un deseo de venganza no satisfecho. Al negarse, son consumidos por la intensidad del duelo con la Valquiria y condenados a vagar por Midgard para siempre como cáscaras de rabia. Son muertos físicos y corpóreos — no fantasmas — con la fuerza y habilidades que poseían en vida, pero sin voluntad ni consciencia, solo violencia ciega. En la mitología histórica habitaban sus tumbas custodiando tesoros; en GoW son la amenaza más común que Kratos y Atreus enfrentan en el bosque y en las ruinas de Midgard. Su abundancia es una señal del estado roto del cosmos: demasiados guerreros rechazando el ciclo natural de muerte.',
+        star: '★ Los Draugr son la manifestación física de un mundo fuera de equilibrio. Cada uno representa un guerrero que eligió la ira sobre el descanso — una resonancia directa con el arco de Kratos, que durante décadas eligió la ira sobre la paz.'
+    },
+
+    // ── PROFECÍA ───────────────────────────────────────
+    {
+        id: 'ragnarok-profecia', label: 'Ragnarök — El Crepúsculo', group: 'MITOLOGIA', type: 'Lore — Profecía',
+        desc: 'Ragnarök («crepúsculo de los dioses», o Ragnarøkkr) es la gran profecía que domina toda la mitología nórdica: una serie de eventos catastróficos que culminarán en la destrucción de Asgard, la muerte de los dioses principales (Odín, Thor, Freyr, Heimdall, entre otros) y el hundimiento del mundo bajo las aguas — seguido de un renacimiento. En la mitología histórica es el fin inevitable de un ciclo cósmico. En el universo GoW, Ragnarök es la pesadilla de Odín: una profecía que conoce en fragmentos y que no puede leer del todo porque los gigantes — los únicos con visión completa del futuro — la ocultaron. Su obsesión por evitarla es la raíz de toda su tiranía. Fimbulwinter (el gran invierno que dura tres años) precede a Ragnarök según la profecía — es la señal de que el fin se acerca.',
+        star: '★★★ Ragnarök es el horizonte narrativo de toda la saga. No es simplemente «el fin del mundo»: es una profecía que los dioses saben que no pueden evitar y ante la cual reaccionan de maneras radicalmente distintas — Odín con terror y control, Týr con aceptación y esperanza. La pregunta que estructura la historia: ¿puede cambiarse el destino, o solo navegarse?'
+    },
+    {
+        id: 'fimbulwinter', label: 'Fimbulwinter', group: 'MITOLOGIA', type: 'Lore — Profecía',
+        desc: 'El «gran invierno» que según la profecía precede a Ragnarök: tres inviernos consecutivos sin verano, que cubren todos los reinos de nieve, hielo y oscuridad. Es la señal cosmológica de que el fin de la era de los dioses se aproxima. En la mitología histórica dura tres años y viene acompañado de conflictos y guerras fratricidas entre humanos. En el universo GoW, Fimbulwinter no debería ocurrir hasta dentro de décadas — su llegada prematura indicaría que algo lo desencadenó antes de tiempo, acelerando el ciclo hacia Ragnarök.',
+        star: '★★★ Fimbulwinter actúa en la narrativa de GoW como un reloj que alguien adelantó sin permiso. La pregunta de qué lo desencadenó y cuándo comenzará es parte del suspenso que se construye a lo largo de la historia. El bosque nevado del Cap. 1 ya lleva en sí la semilla del invierno interminable que viene.'
+    },
+
+    // ── LUGARES COSMOLÓGICOS ───────────────────────────
+    {
+        id: 'asgard', label: 'Asgard', group: 'LUGAR', type: 'Lugar — Reino Æsir',
+        desc: 'El reino de los dioses Æsir, ubicado en la corona de Yggdrasil. Desde Asgard, Odín y los suyos gobiernan y vigilan los ocho reinos restantes. Es una fortaleza: sus muros fueron reforzados por orden de Odín ante el temor de Ragnarök. En su interior se encuentra Valhalla — la sala dorada donde los Einherjar (guerreros caídos dignamente) viven, beben y entrenan para la batalla final. Asgard está conectado a Midgard por el Bifröst, el puente arcoíris. Ningún ser puede viajar libremente a Asgard sin el permiso de los Æsir — es el reino más cerrado y más temido del cosmos.',
+        star: '★★ Asgard es el poder central contra el que todo se define. En la mitología histórica era la sede de los dioses benevolentes; en GoW es la capital de un régimen de terror divine. Su fortaleza y su inaccesibilidad hacen que la sola idea de desafiarla parezca imposible — lo que la convierte en el horizonte inevitable de la historia.'
+    },
+    {
+        id: 'jotunheim', label: 'Jötunheim', group: 'LUGAR', type: 'Lugar — Reino de los Gigantes',
+        desc: 'El reino ancestral de los Jötnar: montañas tan altas que sus picos alcanzan por encima de las nubes, paisajes de escala titánica construidos para seres de tamaño descomunal. Es el destino final del viaje de Kratos y Atreus — donde deben dispersar las cenizas de Faye, en el pico más alto de todos los reinos. Odín destruyó el portal principal a Jötunheim y selló los demás accesos cuando los gigantes lo desterraron de allí para siempre. Los gigantes, antes de desaparecer, construyeron en su interior un templo con murales que registran profecías — incluida la de los eventos que Kratos y Atreus vivirán. Viajar a Jötunheim requiere una solución especial que no existe en ningún portal normal.',
+        star: '★★★ Jötunheim no es solo el destino del viaje — es el archivo de los gigantes. Todo lo que los Jötnar sabían sobre el futuro está tallado en sus paredes. Llegar allí es la promesa que estructura toda la narrativa del primer juego.'
+    },
+    {
+        id: 'vanaheim', label: 'Vanaheim', group: 'LUGAR', type: 'Lugar — Reino Vanir',
+        desc: 'El reino de los dioses Vanir: junglas exuberantes y fauna peligrosa, asociado con la magia, la fertilidad y la sabiduría. Los Vanir son la otra tribu de dioses nórdicos — distintos de los Æsir en naturaleza y valores. Fueron rivales de los Æsir hasta que una larga guerra terminó en tablas y un tratado de paz sellado con intercambio de rehenes. Al inicio de la historia, Vanaheim está bajo la influencia directa de Odín — el acceso al reino está bloqueado. Solo puede entrar quien tenga permiso expreso de los Vanir.',
+        star: '★ Vanaheim establece que el mundo nórdico de GoW no es solo «la tierra de los Æsir»: hay otra facción divina con su propia historia, sus propios valores y sus propias cicatrices de guerra. La dualidad Æsir/Vanir es uno de los ejes mitológicos más ricos de la saga.'
+    },
+    {
+        id: 'helheim', label: 'Helheim', group: 'LUGAR', type: 'Lugar — Reino de los Muertos',
+        desc: 'El reino de los muertos, gobernado por Hel (hija de Loki en la mitología histórica). Es el destino de quienes mueren sin gloria en combate — de vejez, enfermedad o causas «menores». No es un lugar de castigo sino una continuación de la existencia: los muertos en Helheim comen, duermen y viven como lo hacían en vida, aunque en un estado eterno de quietud helada. En GoW el frío de Helheim es tan extremo que incluso el fuego se congela. El acceso al reino no requiere morir: puede alcanzarse a través de los portales del templo de Týr, aunque hacerlo en vida es extraordinariamente peligroso. Su estado en la historia de GoW está perturbado — algo ha interrumpido el flujo natural de los muertos hacia él.',
+        star: '★★ Helheim introduce uno de los conceptos más importantes del universo: en la cosmología nórdica no hay un único destino para los muertos. Valhalla (para guerreros gloriosos), Helheim (para los demás) y el ciclo de los Draugr (para los que se niegan) forman un sistema de muerte con implicaciones narrativas directas.'
+    },
+    {
+        id: 'valhalla', label: 'Valhalla', group: 'LUGAR', type: 'Lugar — Sala de los Caídos',
+        desc: 'La gran sala dorada en Asgard donde los guerreros caídos gloriosamente en batalla — los Einherjar — viven, festejan y entrenan hasta el día de Ragnarök, cuando lucharán junto a los dioses en la batalla final. Las Valquirias son las encargadas de seleccionar y conducir a estos guerreros. En la mitología histórica Valhalla era el mayor honor al que un guerrero nórdico podía aspirar. En GoW es parte del aparato ideológico de Odín: el sistema de muerte honorable que él controla, que define quién merece el descanso y quién no, y que las Valquirias administran bajo su mandato.',
+        star: '★ Valhalla aparece constantemente en el lenguaje y la cultura del mundo de GoW: es el estándar de muerte honorable. Que los Draugr existan — guerreros que rechazaron Valhalla — muestra que no todo el mundo acepta la arquitectura de muerte que Odín construyó.'
+    },
+    {
+        id: 'guerra-aesir-vanir', label: 'Guerra Æsir–Vanir', group: 'MITOLOGIA', type: 'Lore — Historia',
+        desc: 'El conflicto primordial entre las dos tribus divinas nórdicas: los guerreros Æsir de Asgard y los magos Vanir de Vanaheim. La guerra comenzó cuando los Æsir intentaron invadir Vanaheim — subestimaron la magia Vanir y la guerra terminó en tablas después de siglos de combate devastador para ambos bandos. La paz se selló con un intercambio de rehenes: los Vanir enviaron a Njörd, Freyr y Freya a Asgard; los Æsir enviaron a Hœnir y al sabio Mimir a Vanaheim. Los Vanir quedaron insatisfechos cuando Hœnir resultó inútil sin Mimir — eventualmente decapitaron a Mimir y enviaron su cabeza de vuelta a Asgard, donde Odín la preservó. De la boca conjunta de ambas tribus en señal de paz nació Kvasir, el ser más sabio jamás creado. Esta guerra remodela toda la jerarquía de poder del cosmos nórdico.',
+        star: '★★★ La guerra Æsir-Vanir es el pasado que explica el presente: por qué Freya está en Midgard, por qué Mimir está prisionero de Odín, por qué los enanos cargan culpa, por qué los Vanir no son libres. Es la capa histórica que precede al estado del mundo en el Cap. 1.'
+    },
+
+    // ── PERSONAJES LORE ────────────────────────────────
+    {
+        id: 'brok-sindri', label: 'Brok y Sindri', group: 'MITOLOGIA', type: 'Lore — Personajes Aliados',
+        desc: 'Los hermanos Huldra: los dos enanos artesanos más talentosos de los nueve reinos. Brok: piel azul, temperamento brusco y directo, sin filtros sociales, puramente funcional. Sindri: piel rosada-normal, obsesivamente pulcro, educado hasta la exasperación, más reflexivo moralmente. Juntos forjaron las dos armas más importantes del universo: Mjölnir para Thor (de lo que arrastran culpa tremenda, ya que Thor la usó para matar gigantes durante décadas) y el Hacha de Leviatán, que originalmente forjaron para Faye. Son los herrerros de Kratos y Atreus durante el viaje — mejoran armas y equipo en sus talleres dispersos por los reinos. Su aparición desde el principio del viaje es uno de los primeros indicios de que este mundo tiene aliados inesperados dispuestos a ayudar.',
+        star: '★★★ Brok y Sindri son el alivio cómico con profundidad emocional real. Su culpa por Mjölnir los hace moralmente complejos — no son simples comerciantes sino artesanos que intentan compensar el daño que su obra causó. Su relación con Faye, que comisionó el Hacha de Leviatán, los vincula directamente a la historia antes de que empiece.'
+    },
+    {
+        id: 'mimir-sabio', label: 'Mimir — El Sabio', group: 'MITOLOGIA', type: 'Lore — Personaje Clave',
+        desc: 'El ser más sabio de todos los reinos, según la mitología nórdica. En la versión histórica Mimir guardaba el Pozo de la Sabiduría, del que Odín bebió a cambio de un ojo. En el universo GoW, Mimir fue el embajador y consejero más sofisticado que los Æsir poseían — un mortal de sabiduría extraordinaria que Odín hizo inmortal para retenerlo. Fue enviado a los Vanir como rehén tras la guerra Æsir-Vanir; cuando fue devuelto decapitado a Asgard, Odín preservó y encantó su cabeza para que nunca pudiera mentir — convirtiéndolo en una biblioteca viviente a su servicio exclusivo. Al inicio de la historia de GoW, Mimir está encadenado a un árbol en la cima de la montaña de Midgard — prisionero de Odín, encantado para no poder liberarse.',
+        star: '★★★ Mimir es la voz narrativa del lore: cuando se integra al equipo de Kratos y Atreus, se convierte en el narrador de los mitos nórdicos, explicando la historia de los dioses, los gigantes y los reinos a través de relatos. Saber quién es Mimir antes de conocerlo hace que su situación al ser encontrado sea inmediatamente significativa.'
+    },
+
     // ── VIDEOJUEGO ─────────────────────────────────────
     {
         id: 'gow-2018', label: 'God of War (2018)', group: 'VIDEOJUEGO', type: 'Obra — Videojuego',
