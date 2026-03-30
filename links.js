@@ -5,7 +5,74 @@
 
 const links = [
 
-    // ── Root → Categorías ──────────────────────────────
+    // ── Lore Nórdico → Categoría ───────────────────────
+    { source: 'root',      target: 'cat-lore',        label: 'lore previo',     type: 'cat' },
+
+    // ── Cosmología ─────────────────────────────────────
+    { source: 'cat-lore',  target: 'yggdrasil',       label: 'eje cosmológico', type: 'arc' },
+    { source: 'cat-lore',  target: 'lago-nueve',      label: '',                type: 'arc' },
+    { source: 'cat-lore',  target: 'ragnarok-profecia',label: 'profecía central',type: 'arc' },
+    { source: 'cat-lore',  target: 'fimbulwinter',    label: '',                type: 'arc' },
+    { source: 'cat-lore',  target: 'guerra-aesir-vanir', label: 'historia',     type: 'arc' },
+
+    { source: 'yggdrasil', target: 'lago-nueve',      label: 'emerge de',       type: 'geo' },
+    { source: 'yggdrasil', target: 'nueve-reinos',    label: 'conecta',         type: 'lore' },
+    { source: 'fimbulwinter', target: 'ragnarok-profecia', label: 'señal de',   type: 'lore' },
+
+    // ── Dioses ─────────────────────────────────────────
+    { source: 'cat-lore',  target: 'odin-allfather',  label: 'antagonista central', type: 'arc' },
+    { source: 'cat-lore',  target: 'thor-trueno',     label: '',                type: 'arc' },
+    { source: 'cat-lore',  target: 'tyr-dios',        label: '',                type: 'arc' },
+
+    { source: 'odin-allfather', target: 'asgard',       label: 'gobierna desde', type: 'lore' },
+    { source: 'odin-allfather', target: 'ragnarok-profecia', label: 'obsesionado con evitar', type: 'lore' },
+    { source: 'odin-allfather', target: 'jotnar',       label: 'ordenó exterminar', type: 'lore' },
+    { source: 'odin-allfather', target: 'mimir-sabio',  label: 'mantiene prisionero', type: 'lore' },
+    { source: 'thor-trueno',    target: 'jotnar',       label: 'ejecutó genocidio', type: 'lore' },
+    { source: 'thor-trueno',    target: 'brok-sindri',  label: 'recibió Mjölnir de', type: 'lore' },
+    { source: 'tyr-dios',       target: 'lago-nueve',   label: 'construyó templo en', type: 'lore' },
+    { source: 'tyr-dios',       target: 'jotnar',       label: 'trató como iguales', type: 'lore' },
+    { source: 'dioses-aesir',   target: 'odin-allfather', label: 'liderados por', type: 'lore' },
+    { source: 'dioses-aesir',   target: 'thor-trueno',   label: 'incluye',       type: 'lore' },
+    { source: 'dioses-aesir',   target: 'tyr-dios',      label: 'incluye',       type: 'lore' },
+
+    // ── Razas ──────────────────────────────────────────
+    { source: 'cat-lore',  target: 'jotnar',           label: 'raza extinta',   type: 'arc' },
+    { source: 'cat-lore',  target: 'enanos-svartalf',  label: '',               type: 'arc' },
+    { source: 'cat-lore',  target: 'valquirias',       label: '',               type: 'arc' },
+    { source: 'cat-lore',  target: 'draugr',           label: 'amenaza común',  type: 'arc' },
+
+    { source: 'jotnar',    target: 'jotunheim',        label: 'habitan',        type: 'lore' },
+    { source: 'jotnar',    target: 'ragnarok-profecia',label: 'conocían el futuro', type: 'lore' },
+    { source: 'atreus-madre', target: 'jotnar',        label: 'era una Jötunn', type: 'lore' },
+    { source: 'enanos-svartalf', target: 'brok-sindri',label: 'representados por', type: 'lore' },
+    { source: 'valquirias',target: 'valhalla',         label: 'conducen almas a', type: 'lore' },
+    { source: 'valquirias',target: 'draugr',           label: 'su ausencia genera', type: 'lore' },
+
+    // ── Lugares ────────────────────────────────────────
+    { source: 'cat-lore',  target: 'asgard',           label: '',               type: 'arc' },
+    { source: 'cat-lore',  target: 'jotunheim',        label: 'destino del viaje', type: 'arc' },
+    { source: 'cat-lore',  target: 'vanaheim',         label: '',               type: 'arc' },
+    { source: 'cat-lore',  target: 'helheim',          label: '',               type: 'arc' },
+    { source: 'cat-lore',  target: 'valhalla',         label: '',               type: 'arc' },
+
+    { source: 'asgard',    target: 'valhalla',         label: 'contiene',       type: 'geo' },
+    { source: 'asgard',    target: 'odin-allfather',   label: 'sede de',        type: 'lore' },
+    { source: 'jotunheim', target: 'atreus-madre',     label: 'origen de',      type: 'lore' },
+    { source: 'helheim',   target: 'draugr',           label: 'disfunción genera', type: 'lore' },
+    { source: 'guerra-aesir-vanir', target: 'vanaheim',label: 'devastó',        type: 'lore' },
+    { source: 'guerra-aesir-vanir', target: 'mimir-sabio', label: 'resultó en prisión de', type: 'lore' },
+
+    // ── Personajes Lore ────────────────────────────────
+    { source: 'cat-lore',  target: 'brok-sindri',      label: 'aliados clave',  type: 'arc' },
+    { source: 'cat-lore',  target: 'mimir-sabio',      label: '',               type: 'arc' },
+
+    { source: 'brok-sindri', target: 'hacha-leviatán', label: 'forjaron para Faye', type: 'lore' },
+    { source: 'mimir-sabio', target: 'odin-allfather', label: 'prisionero de', type: 'lore' },
+    { source: 'mimir-sabio', target: 'lago-nueve',     label: 'encadenado en cima sobre', type: 'lore' },
+    { source: 'mimir-sabio', target: 'nueve-reinos',   label: 'conoce todos los', type: 'lore' },
+
+
     { source: 'root', target: 'cat-personajes', label: 'personajes', type: 'cat' },
     { source: 'root', target: 'cat-mundo',      label: 'mundo',      type: 'cat' },
     { source: 'root', target: 'cat-trama',      label: 'Cap. 1',     type: 'cat' },
