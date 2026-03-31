@@ -267,4 +267,37 @@ const links = [
     { source: 'tension-padre-hijo', target: 'noche-en-casa',   label: 'visible en',               type: 'trama' },
     { source: 'herencia-natural', target: 'pesadilla-kratos',  label: 'ilustrada en',             type: 'rel' },
 
+    // ── CAPÍTULO 4 — Trama → Eventos ───────────────────
+    { source: 'cat-trama',        target: 'combate-desconocido', label: 'combate central', type: 'arc' },
+    { source: 'cat-trama',        target: 'odin-sabe',           label: 'revelación',      type: 'arc' },
+
+    // ── Secuencia narrativa Cap. 4 ─────────────────────
+    { source: 'llegada-desconocido', target: 'combate-desconocido', label: 'escala a',     type: 'event' },
+
+    // ── Personajes ↔ Eventos Cap. 4 ───────────────────
+    { source: 'kratos',           target: 'combate-desconocido',  label: 'combate y gana provisionalmente', type: 'event' },
+    { source: 'el-desconocido',   target: 'combate-desconocido',  label: 'protagoniza',                     type: 'event' },
+    { source: 'el-desconocido',   target: 'odin-sabe',            label: 'confirma al revelar',             type: 'event' },
+    { source: 'odin-allfather',   target: 'odin-sabe',            label: 'envió al Desconocido',            type: 'lore' },
+    { source: 'odin-allfather',   target: 'el-desconocido',       label: 'lo envió',                        type: 'rel' },
+
+    // ── Voto ──────────────────────────────────────────
+    { source: 'kratos',           target: 'voto-kratos',          label: 'portador del',                    type: 'rel' },
+    { source: 'voto-kratos',      target: 'combate-desconocido',  label: 'puesto a prueba en',              type: 'event' },
+    { source: 'voto-kratos',      target: 'kratos-filosofia',     label: 'expresión máxima de',             type: 'rel' },
+
+    // ── Poderes e Inmunidad ───────────────────────────
+    { source: 'el-desconocido',   target: 'inmunidad-desconocido',label: 'posee',                           type: 'rel' },
+    { source: 'hacha-leviatán',   target: 'inmunidad-desconocido',label: 'neutralizada por',                type: 'event' },
+    { source: 'inmunidad-desconocido', target: 'combate-desconocido', label: 'redefine',                    type: 'rel' },
+
+    // ── Jardín ────────────────────────────────────────
+    { source: 'jardin-faye',      target: 'atreus-madre',         label: 'espacio de',                      type: 'rel' },
+    { source: 'jardin-faye',      target: 'combate-desconocido',  label: 'arena del',                       type: 'event' },
+    { source: 'cat-mundo',        target: 'jardin-faye',          label: '',                                type: 'arc' },
+
+    // ── Odin ↔ mundo ──────────────────────────────────
+    { source: 'odin-sabe',        target: 'atreus',               label: 'Odín ignora su existencia',       type: 'rel' },
+    { source: 'odin-sabe',        target: 'tension-padre-hijo',   label: 'eleva las apuestas de',           type: 'trama' },
+
 ];
