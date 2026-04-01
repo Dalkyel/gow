@@ -244,4 +244,106 @@ const links = [
     { source: 'odin-sabe',        target: 'atreus',               label: 'Odín ignora su existencia', type: 'rel' },
     { source: 'odin-sabe',        target: 'tension-padre-hijo',   label: 'eleva las apuestas de',     type: 'trama' },
 
+    // ── CAPÍTULO 5 — Trama → Eventos ───────────────────
+    { source: 'cat-trama',     target: 'susurro-a-faye',      label: '',              type: 'arc' },
+    { source: 'cat-trama',     target: 'partida-del-hogar',   label: 'umbral',        type: 'arc' },
+    { source: 'cat-trama',     target: 'descubrimiento-stave',label: 'revelación',    type: 'arc' },
+    { source: 'cat-trama',     target: 'inicio-viaje',        label: 'apertura viaje',type: 'arc' },
+
+    // ── Secuencia Cap. 5 ──────────────────────────────
+    { source: 'combate-desconocido', target: 'susurro-a-faye',      label: 'conduce a',  type: 'event' },
+    { source: 'susurro-a-faye',      target: 'partida-del-hogar',   label: 'conduce a',  type: 'event' },
+    { source: 'partida-del-hogar',   target: 'descubrimiento-stave',label: 'conduce a',  type: 'event' },
+    { source: 'descubrimiento-stave',target: 'inicio-viaje',        label: 'conduce a',  type: 'event' },
+
+    // ── Personajes ↔ Eventos Cap. 5 ───────────────────
+    { source: 'kratos', target: 'susurro-a-faye',       label: 'susurra a Faye solo',          type: 'event' },
+    { source: 'kratos', target: 'partida-del-hogar',    label: 'ordena y lidera',               type: 'event' },
+    { source: 'kratos', target: 'descubrimiento-stave', label: 'reconoce los árboles que cortó',type: 'event' },
+    { source: 'kratos', target: 'inicio-viaje',         label: 'señala la montaña',             type: 'event' },
+    { source: 'atreus', target: 'partida-del-hogar',    label: 'se resiste / cae de rodillas',  type: 'event' },
+    { source: 'atreus', target: 'descubrimiento-stave', label: 'descubre y señala la brecha',   type: 'event' },
+    { source: 'atreus', target: 'inicio-viaje',         label: 'pregunta sobre el camino',      type: 'event' },
+
+    // ── Objetos ↔ Personajes/Eventos ──────────────────
+    { source: 'cenizas-faye',    target: 'atreus-madre',         label: 'son los restos de',       type: 'rel' },
+    { source: 'cenizas-faye',    target: 'kratos',               label: 'las lleva Kratos',        type: 'rel' },
+    { source: 'cenizas-faye',    target: 'montana-destino',      label: 'destino de dispersión',   type: 'lore' },
+    { source: 'cenizas-faye',    target: 'partida-del-hogar',    label: 'Atreus pide cargarlas',   type: 'event' },
+    { source: 'runestones-faye', target: 'atreus-madre',         label: 'pertenecían a',           type: 'rel' },
+    { source: 'runestones-faye', target: 'atreus',               label: 'porta',                   type: 'rel' },
+    { source: 'runestones-faye', target: 'atreus-compasion',     label: 'derrumban a Atreus',      type: 'event' },
+    { source: 'stave-runa',      target: 'atreus-madre',         label: 'creado por',              type: 'rel' },
+    { source: 'stave-runa',      target: 'bosque-midgard',       label: 'protege',                 type: 'geo' },
+    { source: 'stave-runa',      target: 'descubrimiento-stave', label: 'revelado en',             type: 'event' },
+    { source: 'stave-runa',      target: 'pira-faye',            label: 'roto al cortar árboles de',type: 'event' },
+    { source: 'montana-destino', target: 'jotunheim',            label: 'ruta hacia',              type: 'geo' },
+    { source: 'cat-mundo',       target: 'montana-destino',      label: 'destino del viaje',       type: 'arc' },
+
+    // ── Temas ↔ Cap. 5 ─────────────────────────────────
+    { source: 'duelo-madre',         target: 'partida-del-hogar',   label: 'segunda pérdida',        type: 'rel' },
+    { source: 'tension-padre-hijo',  target: 'partida-del-hogar',   label: 'micro-gestos de ternura',type: 'trama' },
+    { source: 'tension-padre-hijo',  target: 'susurro-a-faye',      label: 'grieta en la armadura',  type: 'trama' },
+    { source: 'voto-kratos',         target: 'inicio-viaje',         label: 'expresa «prueba que me equivoco»', type: 'event' },
+
+    // ═══════════════════════════════════════════════════════════
+    // CAPÍTULO 6 — NUEVOS LINKS
+    // ═══════════════════════════════════════════════════════════
+
+    // ── Trama → Eventos Cap. 6 ────────────────────────────────
+    { source: 'cat-trama', target: 'primera-emboscada-draugr', label: 'primer combate del viaje', type: 'arc' },
+    { source: 'cat-trama', target: 'leccion-combate-camino',   label: 'pedagogía del viaje',      type: 'arc' },
+    { source: 'cat-trama', target: 'encuentro-runas-camino',   label: 'lore del camino',           type: 'arc' },
+    { source: 'cat-trama', target: 'caida-puente',             label: 'obstáculo físico',          type: 'arc' },
+    { source: 'cat-trama', target: 'segunda-emboscada-draugr', label: '',                          type: 'arc' },
+    { source: 'cat-trama', target: 'campamento-nocturno',      label: 'pausa íntima',              type: 'arc' },
+
+    // ── Secuencia narrativa Cap. 6 ────────────────────────────
+    { source: 'inicio-viaje',             target: 'primera-emboscada-draugr', label: 'conduce a', type: 'event' },
+    { source: 'primera-emboscada-draugr', target: 'leccion-combate-camino',   label: 'conduce a', type: 'event' },
+    { source: 'leccion-combate-camino',   target: 'encuentro-runas-camino',   label: 'conduce a', type: 'event' },
+    { source: 'encuentro-runas-camino',   target: 'caida-puente',             label: 'conduce a', type: 'event' },
+    { source: 'caida-puente',             target: 'segunda-emboscada-draugr', label: 'conduce a', type: 'event' },
+    { source: 'segunda-emboscada-draugr', target: 'campamento-nocturno',      label: 'conduce a', type: 'event' },
+
+    // ── Personajes ↔ Eventos Cap. 6 ──────────────────────────
+    { source: 'kratos', target: 'primera-emboscada-draugr', label: 'detecta amenaza / lidera',       type: 'event' },
+    { source: 'kratos', target: 'leccion-combate-camino',   label: 'enseña / pregunta sobre Baldur', type: 'event' },
+    { source: 'kratos', target: 'caida-puente',             label: 'absorbe el impacto por Atreus',  type: 'event' },
+    { source: 'kratos', target: 'segunda-emboscada-draugr', label: 'lidera y completa',              type: 'event' },
+    { source: 'kratos', target: 'campamento-nocturno',      label: 'pregunta / reflexiona',          type: 'event' },
+
+    { source: 'atreus', target: 'primera-emboscada-draugr', label: 'primer disparo en ruta / salva a Kratos', type: 'event' },
+    { source: 'atreus', target: 'leccion-combate-camino',   label: 'recibe instrucciones / informa sobre dioses', type: 'event' },
+    { source: 'atreus', target: 'encuentro-runas-camino',   label: 'descifra inscripciones',         type: 'event' },
+    { source: 'atreus', target: 'caida-puente',             label: 'cae por impulsividad / es salvado', type: 'event' },
+    { source: 'atreus', target: 'segunda-emboscada-draugr', label: 'baja la guardia / corrige',      type: 'event' },
+    { source: 'atreus', target: 'campamento-nocturno',      label: 'responde sobre Baldur / duerme', type: 'event' },
+
+    // ── Criaturas ↔ Eventos ───────────────────────────────────
+    { source: 'draugr', target: 'primera-emboscada-draugr', label: 'protagonizan',  type: 'event' },
+    { source: 'draugr', target: 'segunda-emboscada-draugr', label: 'protagonizan',  type: 'event' },
+
+    // ── Lore ↔ Eventos ────────────────────────────────────────
+    { source: 'jotnar',        target: 'encuentro-runas-camino', label: 'historia revelada en',      type: 'lore' },
+    { source: 'odin-allfather',target: 'campamento-nocturno',    label: 'preguntado sobre por Kratos', type: 'lore' },
+
+    // ── Lugar ↔ Eventos ───────────────────────────────────────
+    { source: 'cat-mundo',    target: 'puente-roto',            label: 'obstáculo del camino',  type: 'arc' },
+    { source: 'puente-roto',  target: 'caida-puente',           label: 'escenario de',          type: 'geo' },
+    { source: 'puente-roto',  target: 'segunda-emboscada-draugr', label: 'acceso a nivel con',  type: 'geo' },
+    { source: 'montana-destino', target: 'primera-emboscada-draugr', label: 'camino hacia',     type: 'geo' },
+
+    // ── Temas ↔ Cap. 6 ────────────────────────────────────────
+    { source: 'tension-padre-hijo',  target: 'caida-puente',             label: 'gesto protector máximo', type: 'trama' },
+    { source: 'tension-padre-hijo',  target: 'leccion-combate-camino',   label: 'pedagogía en marcha',    type: 'trama' },
+    { source: 'tension-padre-hijo',  target: 'campamento-nocturno',      label: 'reflexión nocturna',     type: 'trama' },
+    { source: 'kratos-filosofia',    target: 'primera-emboscada-draugr', label: 'aplicada en',            type: 'event' },
+    { source: 'kratos-filosofia',    target: 'leccion-combate-camino',   label: 'sistematizada en',       type: 'rel' },
+    { source: 'atreus-aprobacion',   target: 'primera-emboscada-draugr', label: 'motor en',               type: 'rel' },
+    { source: 'atreus-aprobacion',   target: 'segunda-emboscada-draugr', label: 'pregunta al final',      type: 'rel' },
+    { source: 'lengua-antigua',      target: 'encuentro-runas-camino',   label: 'aplicada en',            type: 'event' },
+    { source: 'kratos-pasado',       target: 'campamento-nocturno',      label: 'aflora en imágenes',     type: 'lore' },
+
+
 ];
